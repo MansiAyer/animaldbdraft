@@ -41,7 +41,7 @@ export default function Home({
         {isConnected ? (
           <small className="subtitle">You are connected to MongoDB</small>
         ) : (
-          <small className={inter.className}>
+          <small className="subtitle">
             You are NOT connected to MongoDB. Check the <code>README.md</code>{" "}
             for instructions.
           </small>
