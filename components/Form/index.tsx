@@ -44,42 +44,27 @@ export default function FormCustom() {
 
   function WhatGoesOut() {
     //display correct form part
-    if (pillNum == 1) {
-      return (
-        <>
-          <NavPillButtons
-            classOne="text-decoration-underline fst-italic"
-            classTwo=""
-            classThree=""
-          />
+    return (
+      <div>
+        <NavPillButtons
+          classOne={pillNum == 1 ? "text-decoration-underline fst-italic" : ""}
+          classTwo={pillNum == 2 ? "text-decoration-underline fst-italic" : ""}
+          classThree={
+            pillNum == 3 ? "text-decoration-underline fst-italic" : ""
+          }
+        />
+
+        {pillNum == 1 ? (
           <StepFirst />
-        </>
-      );
-    } else if (pillNum == 2) {
-      return (
-        <>
-          <NavPillButtons
-            classOne=""
-            classTwo="text-decoration-underline fst-italic"
-            classThree=""
-          />
+        ) : pillNum == 2 ? (
           <StepSecond />
-        </>
-      );
-    } else if (pillNum == 3) {
-      return (
-        <>
-          <NavPillButtons
-            classOne=""
-            classTwo=""
-            classThree="text-decoration-underline fst-italic"
-          />
+        ) : (
           <StepThird />
-        </>
-      );
-    }
-    //end of if else function
-  } //end of WhatGoesOut function
+        )}
+      </div>
+    );
+    //end of if else
+  } //end of whatgoesout
   
 
   return (
