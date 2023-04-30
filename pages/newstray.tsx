@@ -3,12 +3,12 @@ import Form from "../components/Form";
 
 export default function form() {
   return (
-    <>
+    <div>
       <Navbar />
 
       <div className="card text-bg-secondary container-sm">
         <Form />
       </div>
-    </>
+    </div>
   );
 }
