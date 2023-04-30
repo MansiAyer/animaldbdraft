@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Form() {
+export default function FormCustom() {
   const [pillNum, setPills] = useState(1);
 
   function NavPillButtons({

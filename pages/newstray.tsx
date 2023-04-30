@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import Form from "../components/Form";
+import FormCustom from "../components/Form";
 
 export default function form() {
   return (
@@ -7,6 +7,7 @@ export default function form() {
       <Navbar />
 
       <div className="card text-bg-secondary container-sm">
+        <FormCustom />
       </div>
     </div>
   );
