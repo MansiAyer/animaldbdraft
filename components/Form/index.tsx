@@ -42,6 +42,55 @@ export default function FormCustom() {
   //end of nav pills
 
 
+  function WhatGoesOut() {
+    //display correct form part
+    if (pillNum == 1) {
+      return (
+        <>
+          <NavPillButtons
+            classOne="text-decoration-underline fst-italic"
+            classTwo=""
+            classThree=""
+          />
+          <StepFirst />
+        </>
+      );
+    } else if (pillNum == 2) {
+      return (
+        <>
+          <NavPillButtons
+            classOne=""
+            classTwo="text-decoration-underline fst-italic"
+            classThree=""
+          />
+          <StepSecond />
+        </>
+      );
+    } else if (pillNum == 3) {
+      return (
+        <>
+          <NavPillButtons
+            classOne=""
+            classTwo=""
+            classThree="text-decoration-underline fst-italic"
+          />
+          <StepThird />
+        </>
+      );
+    }
+    //end of if else function
+  } //end of WhatGoesOut function
+  
+
+  return (
+    <>
+      <WhatGoesOut />
+    </>);
+}
+//end of Form component
+
+
+
 
   function StepFirst() {
     return (
@@ -174,49 +223,4 @@ export default function FormCustom() {
       </>
     );
   }
-
-
-
-
-
-
-  //display correct form part
-  if (pillNum == 1) {
-    return (
-      <>
-        <NavPillButtons
-          classOne="text-decoration-underline fst-italic"
-          classTwo=""
-          classThree=""
-        />
-        <StepFirst />
-      </>
-    );
-  } else if (pillNum == 2) {
-    return (
-      <>
-        <NavPillButtons
-          classOne=""
-          classTwo="text-decoration-underline fst-italic"
-          classThree=""
-        />
-        <StepSecond />
-      </>
-    );
-  } else if (pillNum == 3) {
-    return (
-      <>
-        <NavPillButtons
-          classOne=""
-          classTwo=""
-          classThree="text-decoration-underline fst-italic"
-        />
-        <StepThird />
-      </>
-    );
-  }
-  //end of if else
-}
-//end of Form component
-
 
