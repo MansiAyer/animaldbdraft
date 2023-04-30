@@ -41,173 +41,182 @@ export default function Form() {
   }
   //end of nav pills
 
+
+
+  function StepFirst() {
+    return (
+      <>
+        <div className="card text-bg-light mb-3">
+          <h5 className="card-header">Stray details</h5>
+          <div className="card-body text-bg-secondary d-grid gap-3">
+            <div className="row">
+              <div className="col-auto">
+                <label htmlFor="strayName" className="col-form-label">
+                  Stray Name:{" "}
+                </label>
+              </div>
+              <div className="col-auto">
+                <input
+                  type="text"
+                  id="strayName"
+                  className="form-control"
+                  aria-labelledby="strayname"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-auto">
+                <label htmlFor="strayAddr" className="col-form-label">
+                  Stray Address:{" "}
+                </label>
+              </div>
+              <div className="col-auto">
+                <input
+                  type="text"
+                  id="strayAddr"
+                  className="form-control"
+                  aria-labelledby="strayaddress"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  function StepSecond() {
+    return (
+      <>
+        <div className="card text-bg-light mb-3">
+          <h5 className="card-header">Feeder details</h5>
+          <div className="card-body text-bg-secondary d-grid gap-3">
+            <div className="row">
+              <div className="col-auto">
+                <label htmlFor="feederName" className="col-form-label">
+                  Feeder Name:{" "}
+                </label>
+              </div>
+              <div className="col-auto">
+                <input
+                  type="text"
+                  id="feederName"
+                  className="form-control"
+                  aria-labelledby="feedername"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-auto">
+                <label htmlFor="feederContact" className="col-form-label">
+                  Feeder contact num:{" "}
+                </label>
+              </div>
+              <div className="col-auto">
+                <input
+                  type="text"
+                  id="feederContact"
+                  className="form-control"
+                  aria-labelledby="feedercontact"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  function StepThird() {
+    return (
+      <>
+        <div className="card text-bg-light mb-3">
+          <h5 className="card-header">Pictures of stray</h5>
+          <div className="card-body text-bg-secondary d-grid gap-3">
+            <div className="row">
+              <div className="col-auto">
+                <label htmlFor="strayMedia" className="col-form-label">
+                  Pictures of stray:{" "}
+                </label>
+              </div>
+              <div className="col-auto">
+                <input
+                  type="text"
+                  id="strayMedia"
+                  className="form-control"
+                  aria-labelledby="straymedia"
+                  required
+                />
+              </div>
+            </div>
+
+            <details>
+              <summary className="text-decoration-underline">
+                {" "}
+                add additional details expand section
+              </summary>
+              <p> stray species dropdown cat/dog/bird? </p>
+              <p> stray age </p>
+              <p>
+                {" "}
+                stray identification such as fur color, fur pattern, eye color,
+                scars{" "}
+              </p>
+            </details>
+          </div>
+        </div>
+      </>
+    );
+  }
+
+
+
+
+
+
   //display correct form part
   if (pillNum == 1) {
     return (
-      <div>
+      <>
         <NavPillButtons
           classOne="text-decoration-underline fst-italic"
           classTwo=""
           classThree=""
         />
         <StepFirst />
-      </div>
+      </>
     );
   } else if (pillNum == 2) {
     return (
-      <div>
+      <>
         <NavPillButtons
           classOne=""
           classTwo="text-decoration-underline fst-italic"
           classThree=""
         />
         <StepSecond />
-      </div>
+      </>
     );
   } else if (pillNum == 3) {
     return (
-      <div>
+      <>
         <NavPillButtons
           classOne=""
           classTwo=""
           classThree="text-decoration-underline fst-italic"
         />
         <StepThird />
-      </div>
+      </>
     );
   }
   //end of if else
 }
 //end of Form component
 
-function StepFirst() {
-  return (
-    <div>
-      <div className="card text-bg-light mb-3">
-        <h5 className="card-header">Stray details</h5>
-        <div className="card-body text-bg-secondary d-grid gap-3">
-          <div className="row">
-            <div className="col-auto">
-              <label htmlFor="strayName" className="col-form-label">
-                Stray Name:{" "}
-              </label>
-            </div>
-            <div className="col-auto">
-              <input
-                type="text"
-                id="strayName"
-                className="form-control"
-                aria-labelledby="strayname"
-                required
-              />
-            </div>
-          </div>
 
-          <div className="row">
-            <div className="col-auto">
-              <label htmlFor="strayAddr" className="col-form-label">
-                Stray Address:{" "}
-              </label>
-            </div>
-            <div className="col-auto">
-              <input
-                type="text"
-                id="strayAddr"
-                className="form-control"
-                aria-labelledby="strayaddress"
-                required
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function StepSecond() {
-  return (
-    <div>
-      <div className="card text-bg-light mb-3">
-        <h5 className="card-header">Feeder details</h5>
-        <div className="card-body text-bg-secondary d-grid gap-3">
-          <div className="row">
-            <div className="col-auto">
-              <label htmlFor="feederName" className="col-form-label">
-                Feeder Name:{" "}
-              </label>
-            </div>
-            <div className="col-auto">
-              <input
-                type="text"
-                id="feederName"
-                className="form-control"
-                aria-labelledby="feedername"
-                required
-              />
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-auto">
-              <label htmlFor="feederContact" className="col-form-label">
-                Feeder contact num:{" "}
-              </label>
-            </div>
-            <div className="col-auto">
-              <input
-                type="text"
-                id="feederContact"
-                className="form-control"
-                aria-labelledby="feedercontact"
-                required
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function StepThird() {
-  return (
-    <div>
-      <div className="card text-bg-light mb-3">
-        <h5 className="card-header">Pictures of stray</h5>
-        <div className="card-body text-bg-secondary d-grid gap-3">
-          <div className="row">
-            <div className="col-auto">
-              <label htmlFor="strayMedia" className="col-form-label">
-                Pictures of stray:{" "}
-              </label>
-            </div>
-            <div className="col-auto">
-              <input
-                type="text"
-                id="strayMedia"
-                className="form-control"
-                aria-labelledby="straymedia"
-                required
-              />
-            </div>
-          </div>
-
-          <details>
-            <summary className="text-decoration-underline">
-              {" "}
-              add additional details expand section
-            </summary>
-            <p> stray species dropdown cat/dog/bird? </p>
-            <p> stray age </p>
-            <p>
-              {" "}
-              stray identification such as fur color, fur pattern, eye color,
-              scars{" "}
-            </p>
-          </details>
-        </div>
-      </div>
-    </div>
-  );
-}
