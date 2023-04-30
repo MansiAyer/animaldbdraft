@@ -7,7 +7,6 @@ export default function form() {
       <Navbar />
 
       <div className="card text-bg-secondary container-sm">
-        <Form />
       </div>
     </div>
   );
