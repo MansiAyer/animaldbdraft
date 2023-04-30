@@ -83,9 +83,9 @@ export default function Form() {
 function StepFirst() {
   return (
     <>
-      <div class="card text-bg-light mb-3">
-        <h5 class="card-header">Stray details</h5>
-        <div class="card-body text-bg-secondary d-grid gap-3">
+      <div className="card text-bg-light mb-3">
+        <h5 className="card-header">Stray details</h5>
+        <div className="card-body text-bg-secondary d-grid gap-3">
           <div className="row">
             <div className="col-auto">
               <label htmlFor="strayName" className="col-form-label">
@@ -128,9 +128,9 @@ function StepFirst() {
 function StepSecond() {
   return (
     <>
-      <div class="card text-bg-light mb-3">
-        <h5 class="card-header">Feeder details</h5>
-        <div class="card-body text-bg-secondary d-grid gap-3">
+      <div className="card text-bg-light mb-3">
+        <h5 className="card-header">Feeder details</h5>
+        <div className="card-body text-bg-secondary d-grid gap-3">
           <div className="row">
             <div className="col-auto">
               <label htmlFor="feederName" className="col-form-label">
@@ -173,9 +173,9 @@ function StepSecond() {
 function StepThird() {
   return (
     <>
-      <div class="card text-bg-light mb-3">
-        <h5 class="card-header">Pictures of stray</h5>
-        <div class="card-body text-bg-secondary d-grid gap-3">
+      <div className="card text-bg-light mb-3">
+        <h5 className="card-header">Pictures of stray</h5>
+        <div className="card-body text-bg-secondary d-grid gap-3">
           <div className="row">
             <div className="col-auto">
               <label htmlFor="strayMedia" className="col-form-label">
