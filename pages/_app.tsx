@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossOrigin="anonymous"
       />
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }

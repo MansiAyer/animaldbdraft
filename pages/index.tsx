@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from "next/link";
 import clientPromise from '../lib/mongodb'
 import { InferGetServerSidePropsType } from 'next'
 
@@ -68,9 +69,9 @@ export default function Home({
 
         <div className="container w-50 h-25">
           <div className="row">
-            <div className="btn btn-light my-3 p-3 col">
+            <Link href="/newstray" className="btn btn-light my-3 p-3 col">
               <h3>Add a stray &rarr;</h3>
-            </div>
+            </Link>
           </div>
 
           <div className="row">
@@ -81,16 +82,6 @@ export default function Home({
         </div>
       </main>
 
-      <div className="position-absolute bottom-0 start-50 translate-middle-x">
-        <div className="border-top border-light mt-3 mb-0">
-          <p>
-            Built&nbsp;and&nbsp;Maintained by
-            <code>
-              <a> Solulogy</a>
-            </code>
-          </p>
-        </div>
-      </div>
     </div>
   );
 }
