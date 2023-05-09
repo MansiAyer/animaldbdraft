@@ -68,6 +68,7 @@ export default function Home({
         </div>
 
         <div className="container w-50 h-25">
+
           <div className="row">
             <Link href="/newstray" className="btn btn-light my-3 p-3 col">
               <h3>Add a stray &rarr;</h3>
@@ -75,10 +76,11 @@ export default function Home({
           </div>
 
           <div className="row">
-            <div className="btn btn-light my-3 p-3">
+            <Link href="/straysview" className="btn btn-light my-3 p-3">
               <h3>See existing entries &rarr;</h3>
-            </div>
+            </Link>
           </div>
+
         </div>
       </main>
 
