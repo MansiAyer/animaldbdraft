@@ -6,7 +6,7 @@ interface IndexProps {
 
 export interface StrayProps {
   strayName: string;
-  strayAdds: string;
+  strayAddr: string;
   feederName: string;
   feederNum: string;
   mediaFolder: string;
