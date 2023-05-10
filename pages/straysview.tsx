@@ -1,5 +1,13 @@
 import clientPromise from "../lib/mongodb";
 
+export interface StrayProps {
+  strayName: string;
+  strayAdds: string;
+  feederName: string;
+  feederNum: string;
+  mediaFolder: string;
+}
+
 export async function getServerSideProps() {
     try {
         const client = await clientPromise;
@@ -20,7 +28,7 @@ export async function getServerSideProps() {
     }
 }
 
-export default function Movies({ strays:any }) {
+export default function Movies({ strays }: {strays: StrayProps}) {
     return (
         <div>
             <h1>Top 20 strays of All Time</h1>
