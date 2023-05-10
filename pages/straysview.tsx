@@ -1,5 +1,9 @@
 import clientPromise from "../lib/mongodb";
 
+interface IndexProps {
+  strays: Array<StrayProps>
+}
+
 export interface StrayProps {
   strayName: string;
   strayAdds: string;
@@ -28,7 +32,8 @@ export async function getServerSideProps() {
     }
 }
 
-export default function Movies({ strays }: {strays: StrayProps}) {
+export default function Movies(props: IndexProps) {
+    const { strays } = props
     return (
         <div>
             <h1>Top 20 strays of All Time</h1>
