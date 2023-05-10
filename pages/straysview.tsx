@@ -31,7 +31,6 @@ export async function getServerSideProps() {
 }
 
 export default function Movies(props: IndexProps) {
-    const [error, setError] = useState('');
     const { strays } = props
     return (
         <div>
