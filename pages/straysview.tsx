@@ -13,7 +13,7 @@ export interface StrayProps {
 }
 
 export async function getServerSideProps() {
-    try {
+    
         const client = await clientPromise;
         const db = client.db("straysdb");
 
@@ -27,12 +27,11 @@ export async function getServerSideProps() {
         return {
             props: { movies: JSON.parse(JSON.stringify(strays)) },
         };
-    } catch (e) {
-        console.error(e);
-    }
+    
 }
 
 export default function Movies(props: IndexProps) {
+    const [error, setError] = useState('');
     const { strays } = props
     return (
         <div>

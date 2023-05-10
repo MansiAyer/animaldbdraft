@@ -5,3 +5,5 @@
 - [autocomplete tutorial ](https://www.mongodb.com/developer/products/atlas/autocomplete-atlas-search-nextjs/)
 
 - [mongodb vercel starter template](https://github.com/vercel/mongodb-starter)
+
+- [todo list tutorial using mnextjs, mongodb, typescript](https://dev.to/alexmercedcoder/building-a-full-stack-todo-list-with-mongodb-nextjs-typescript-2f75)
