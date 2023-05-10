@@ -20,7 +20,7 @@ export async function getServerSideProps() {
     }
 }
 
-export default function Movies({ strays }) {
+export default function Movies({ strays:any }) {
     return (
         <div>
             <h1>Top 20 strays of All Time</h1>
